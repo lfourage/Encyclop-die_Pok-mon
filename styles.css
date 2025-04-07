@@ -55,6 +55,7 @@ main {
 
 .fiche:hover {
     scale: 1.1 1.1;
+    box-shadow: 3px 3px black;
 }
 
 /*---------------couleur-type--------------*/
