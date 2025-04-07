@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --couleur-feu: orange;
+    --couleur-eau: aqua;
+    --couleur-plante: chartreuse;
+    --couleur-elektrik: yellow;
+    --couleur-fée: pink;
+    --couleur-psy: fuchsia;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 4rem;
+}
+
+main {
+    display: grid;
+    margin: 2rem 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+}
+
+.fiche {
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    border-radius: 10px;
+    aspect-ratio: 10/12;
+    width: 20vw;
+    min-width: 200px;
+    text-align: center;
+}
+
+.fiche>header {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.fiche>img {
+    aspect-ratio: 1/1;
+    width: 90%;
+}
+
+.fiche:hover {
+    scale: 1.1 1.1;
+}
+
+/*---------------couleur-type--------------*/
+
+.fiche:has(.feu) {
+    background-color: var(--couleur-feu);
+}
+
+
+.fiche:has(.eau) {
+    background-color: var(--couleur-eau);
+}
+
+.fiche:has(.plante) {
+    background-color: var(--couleur-plante);
+}
+
+.fiche:has(.electrik) {
+    background-color: var(--couleur-elektrik);
+}
+
+.fiche:has(.fée) {
+    background-color: var(--couleur-fée);
+}
+
+.fiche:has(.psy) {
+    background-color: var(--couleur-psy);
+}
+
+/*-----------------responsiveness------------------*/
+
+@media only screen and (max-width: 1000px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
