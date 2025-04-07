@@ -23,6 +23,8 @@ h1 {
     font-size: 4rem;
 }
 
+/*----------------------Grid-------------------------*/
+
 main {
     display: grid;
     margin: 2rem 2rem;
